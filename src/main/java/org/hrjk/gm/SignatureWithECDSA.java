@@ -36,7 +36,7 @@ public class SignatureWithECDSA {
      * 。。。。。。。。。。
      *
      * 通过此方法查看支持的基于密钥的消息摘要散列算法
-     * {@link TestGm#testProvider()}
+     * {@link TestGmCertificate#testProvider()}
      */
     private static final String SIGNATURE_ALGORITHM = "SHA512WithECDSA";
 

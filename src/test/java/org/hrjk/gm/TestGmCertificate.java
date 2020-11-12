@@ -1,11 +1,6 @@
 package org.hrjk.gm;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import com.aliyun.gmsse.GMProvider;
-import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
-import org.apache.http.conn.ssl.TrustStrategy;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.util.encoders.Base64;
 import org.junit.jupiter.api.Assertions;
