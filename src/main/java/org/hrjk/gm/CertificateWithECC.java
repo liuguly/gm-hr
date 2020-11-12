@@ -1,16 +1,10 @@
 package org.hrjk.gm;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import cn.hutool.crypto.PemUtil;
 import org.bouncycastle.jcajce.provider.asymmetric.x509.CertificateFactory;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.jce.provider.PEMUtil;
 import org.bouncycastle.openssl.PEMKeyPair;
 import org.bouncycastle.openssl.PEMParser;
 import org.bouncycastle.openssl.jcajce.JcaPEMKeyConverter;
-import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.io.pem.PemObject;
-import org.bouncycastle.util.io.pem.PemObjectParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -84,7 +78,7 @@ public class CertificateWithECC {
      * @param certificatePath 证书路径
      */
     public PublicKey getPublicKeyByCerFile(String certificatePath){
-        X509Certificate x509Certificate = (X509Certificate)getCertificate(certificatePath);
+        X509Certificate x509Certificate = this.getX509Certificate(certificatePath);
         return x509Certificate.getPublicKey();
     }
 
